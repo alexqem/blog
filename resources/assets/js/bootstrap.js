@@ -1,9 +1,9 @@
 
 window._ = require('lodash');
-
+window._ = require('sweetalert');
 /**
  * We'll load jQuery and the Bootstrap jQuery plugin which provides support
- * for JavaScript based Bootstrap features such as modals and tabs. This
+ * for JavaScript based Bootstrap f eatures such as modals and tabs. This
  * code may be modified to fit the specific needs of your application.
  */
 
