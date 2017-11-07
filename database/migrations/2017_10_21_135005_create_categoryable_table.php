@@ -15,6 +15,7 @@ class CreateCategoryableTable extends Migration
     {
         Schema::create('categoryables', function (Blueprint $table) {
             $table->integer('category_id');
+            $table->string('slug')->unqie();
             $table->integer('categoryable_id');
             $table->string('categoryable_type');
         });

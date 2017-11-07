@@ -12,7 +12,7 @@
 
 <input type="text" class="form-control" name="title" placeholder="Name" value="{{$category->title or ""}}" required>
 <br>
-<input class="form-control" type="text" name="Slug" placeholder="Auto generate" value="{{$category->slug or ""}}" readonly="">
+<input class="form-control" type="text" name="slug" placeholder="Auto generate" value="{{$category->slug or ""}}" readonly="">
 
 <label for="">Parent Category</label>
 <select class="form-control" name="parent_id">
