@@ -19,4 +19,8 @@ class Article extends Model
     public function setSlugAttribute($value) {
         $this->attributes['slug'] = Str::slug( mb_substr($this->title, 0, 40) . "-" . \Carbon\Carbon::now()->format('dmyHi'), '-');
     }
+
+    public function scopePublished($query) {
+            return $query->where('published', 1)->orderby('created_at', 'desc')->take(5);
+    }
 }

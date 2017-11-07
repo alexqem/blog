@@ -17,5 +17,10 @@ class Category extends Model
     public function children() {
         return $this->hasMany(self::class, 'parent_id');
     }
-
+    public function scopeLastCategories($query, $count) {
+        return $query->orderby('created_at', 'desc')->take($count)->get();
+    }
+    public function articles() {
+        return $this->morphedByMany('App\Article', 'categoryable');
+    }
 }

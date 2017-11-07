@@ -8,12 +8,12 @@
         <option value="1">Published</option>
     @endif
 </select>
-
+<br>
 
 <input type="text" class="form-control" name="title" placeholder="Name" value="{{$category->title or ""}}" required>
 <br>
 <input class="form-control" type="text" name="slug" placeholder="Auto generate" value="{{$category->slug or ""}}" readonly="">
-
+<br>
 <label for="">Parent Category</label>
 <select class="form-control" name="parent_id">
     <option value="0">-- without parent category --</option>
