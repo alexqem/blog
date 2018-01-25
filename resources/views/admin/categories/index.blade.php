@@ -28,8 +28,7 @@
                                 method="post" onsubmit="
                                 if(confirm('Are you sure to Delete?')) {
                                     return true
-                                } else {return false}"
-                            >
+                                } else {return false}">
                                 <input type="hidden" name="_method" value="DELETE">
                                 {{csrf_field()}}
                                 <a href="{{route('admin.category.edit', $category)}}" class="btn btn-default">Edit</a>

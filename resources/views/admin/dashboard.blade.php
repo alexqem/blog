@@ -5,9 +5,11 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-3">
-                <div class="jumbotron text-center">
-                    <p><span class="label label-primary">Categories {{$count_cat}}</span></p>
-                </div>
+                <a href="/admin/вфcategory">
+                    <div class="jumbotron text-center">
+                        <p><span class="label label-primary">Categories {{$count_cat}}</span></p>
+                    </div>
+                </a>
             </div>
             <div class="col-sm-3">
                 <div class="jumbotron text-center">
