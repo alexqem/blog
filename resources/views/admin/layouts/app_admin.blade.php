@@ -46,6 +46,14 @@
                             <li><a href="{{route('admin.article.index')}}">Posts</a></li>
                         </ul>
                     <li>
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                            Users
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="{{route('admin.user_managment.user.index')}}">Users</a></li>
+                        </ul>
+                    <li>
                 </ul>
 
                 <!-- Right Side Of Navbar -->
