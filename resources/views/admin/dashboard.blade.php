@@ -5,7 +5,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-3">
-                <a href="/admin/вфcategory">
+                <a href="/admin/category">
                     <div class="jumbotron text-center">
                         <p><span class="label label-primary">Categories {{$count_cat}}</span></p>
                     </div>
